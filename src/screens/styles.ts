@@ -17,7 +17,7 @@ export const ContainerInput= styled.View`
 
     justify-content: center;
     flex-direction: row;
-    top: -6px;
+    top: -20px;
     height:54px;
     padding-left: 24px;
     padding-right: 24px;
