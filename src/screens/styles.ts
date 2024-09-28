@@ -62,4 +62,8 @@ export const ContainerText = styled.View`
     margin-bottom: 20px;
     padding-bottom: 20px;
 
+    border-bottom-width: 0.5px;
+    border-bottom-color: #D9D9D9;
+
+
 `;

@@ -1,8 +1,6 @@
 import styled from "styled-components/native";
 
 
-
-
 export const ProductContainer = styled.View<{done: boolean}>`
     gap: 8px;
     padding-top: 12px;
@@ -17,7 +15,7 @@ export const ProductContainer = styled.View<{done: boolean}>`
     border-color: #808080;
     flex-direction: row;
     align-self: center;
-
+    margin-top: 8px;
 
 
 `;
@@ -34,9 +32,9 @@ export const ProductDescription = styled.Text`
 export const ProductDone = styled(ProductDescription)`
     flex: 1;
     font-size: 14px;
-    color: #262626;
-    margin-left: 8px;
+    color: #808080;
     text-decoration: line-through;
+
 `;
 
 export const ButtonRemove = styled.TouchableOpacity`

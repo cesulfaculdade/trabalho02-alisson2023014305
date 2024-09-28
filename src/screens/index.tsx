@@ -82,8 +82,10 @@ export function Home(){
             placeholder="Adicione um novo produto"
             placeholderTextColor="#BDBABA"
             keyboardType="default"
+            value={productName}
+            onChangeText={setProductName}
             />
-            <Button>
+            <Button onPress={handleProductAdd}>
               <IconButton name="add-circle-outline" />
             </Button>
             
@@ -97,8 +99,6 @@ export function Home(){
             <ProductCount name={"Finalizados"} color="#7A4A9E" numeros={productDone} />
 
         </ContainerText>
-
-
 
         <FlatList
           data={products}

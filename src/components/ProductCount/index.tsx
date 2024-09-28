@@ -1,6 +1,7 @@
-import { ContainerProductCount, NumberContainer, NumberText, TxtContainer } from "./styles";
-
-
+import { ContainerProductCount, 
+    NumberContainer, 
+    NumberText, 
+    TxtContainer } from "./styles";
 
 
 type Props = {

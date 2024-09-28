@@ -1,7 +1,11 @@
-import { ButtonRemove, ProductContainer, ProductDescription, ProductDone, RadioButton } from "./styles";
-import { MaterialIcons, MaterialCommunityIcons } from '@expo/vector-icons';
+import { ButtonRemove, 
+  ProductContainer, 
+  ProductDescription, 
+  ProductDone, 
+  RadioButton } from "./styles";
 
-
+import { MaterialIcons, 
+  MaterialCommunityIcons } from '@expo/vector-icons';
 
 
 type Props = {
