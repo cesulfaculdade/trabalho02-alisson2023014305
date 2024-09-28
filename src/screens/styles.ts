@@ -50,3 +50,16 @@ export const IconButton =styled(MaterialIcons)`
     color: white;
     font-size: 20px;
 `;
+
+export const ContainerText = styled.View`
+
+    
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+
+`;

@@ -1,15 +1,16 @@
-import { Alert, Text, TextInput, View } from "react-native";
-import { Button, Container, ContainerInput, ContainerTop, IconButton, Input } from "./styles";
+import { Alert, FlatList, Text, TextInput, View } from "react-native";
+import { Button, Container, ContainerInput, ContainerText, ContainerTop, IconButton, Input } from "./styles";
 
 import { Header } from "@components/header";
 import { Product } from "@components/Product";
 import { useState } from "react";
+import { ProductCount } from "@components/ProductCount";
+import { EmptyList } from "@components/EmptyList";
 
 type Product = {
     name: string;
     done: boolean;
   };
-
 
 
 export function Home(){
@@ -65,14 +66,6 @@ export function Home(){
 
 
 
-
-
-
-
-
-
-
-
     return(
 
     <Container>
@@ -96,12 +89,33 @@ export function Home(){
             
         </ContainerInput>
 
-        <Product 
-            name="Banana" 
-            onRemove={() => console.log('Remover produto')}
-            done={false} 
-            RadioPress={() => console.log('Toggle produto')}
-            />
+
+        <ContainerText>
+
+            <ProductCount name={ "Produtos"} color="#31C667" numeros={products.length}  />
+
+            <ProductCount name={"Finalizados"} color="#7A4A9E" numeros={productDone} />
+
+        </ContainerText>
+
+
+
+        <FlatList
+          data={products}
+          keyExtractor={(item) => item.name}
+          renderItem={({ item }) => (
+            <Product
+              name={item.name}  done={item.done}
+
+              onRemove={() => handleProductRemove(item.name)}
+              RadioPress={() => handleProductDone(item.name)}
+            />    
+        )}
+
+          showsVerticalScrollIndicator={ false }
+          ListEmptyComponent={ <EmptyList/> }
+        />
+    
 
     </Container>
     )
