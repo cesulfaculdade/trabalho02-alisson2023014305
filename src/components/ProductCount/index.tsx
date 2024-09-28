@@ -16,7 +16,7 @@ export function ProductCount({color, name, numeros}: Props){
 
         <ContainerProductCount>
 
-        <TxtContainer color ={color}>{name}</TxtContainer>
+        <TxtContainer style={{color}}>{name}</TxtContainer>
 
         <NumberContainer>
             <NumberText>{numeros}</NumberText>

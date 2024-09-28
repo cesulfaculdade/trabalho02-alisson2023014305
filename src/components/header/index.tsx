@@ -3,7 +3,6 @@ import { Text } from "react-native";
 import { HeaderContainer, TextHeader } from "./styles";
 
 
-
 export function Header(){
     return(
 
@@ -15,7 +14,4 @@ export function Header(){
 
 
     );
-
-
-
 }

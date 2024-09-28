@@ -1,14 +1,11 @@
 import styled from "styled-components/native";
 
 
-
-
 export const EmptyListContainer = styled.View`
     flex: 1;
     align-items: center;
     flex-direction: column;
     padding-top: 48px;
-  
 
 `;
 

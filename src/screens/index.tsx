@@ -1,11 +1,19 @@
-import { Alert, FlatList, Text, TextInput, View } from "react-native";
-import { Button, Container, ContainerInput, ContainerText, ContainerTop, IconButton, Input } from "./styles";
+import { Alert, FlatList} from "react-native";
+
+import { Button, 
+  Container, 
+  ContainerInput, 
+  ContainerText, 
+  ContainerTop, 
+  IconButton, 
+  Input } from "./styles";
 
 import { Header } from "@components/header";
 import { Product } from "@components/Product";
 import { useState } from "react";
 import { ProductCount } from "@components/ProductCount";
 import { EmptyList } from "@components/EmptyList";
+
 
 type Product = {
     name: string;
@@ -64,8 +72,6 @@ export function Home(){
                 );
               }
 
-
-
     return(
 
     <Container>
@@ -116,7 +122,6 @@ export function Home(){
           ListEmptyComponent={ <EmptyList/> }
         />
     
-
     </Container>
     )
 }

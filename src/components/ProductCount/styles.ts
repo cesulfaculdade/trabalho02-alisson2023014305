@@ -1,15 +1,13 @@
 import styled from "styled-components/native";
 
 
-
-
 export const ContainerProductCount = styled.View`
 
     flex-direction: row;
     height: 19px;
 
 `;
-export const TxtContainer = styled.Text<{color : string}>`
+export const TxtContainer = styled.Text`
     font-weight: bold;
 
 `;

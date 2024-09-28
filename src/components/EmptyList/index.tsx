@@ -1,7 +1,12 @@
-import { Text, View } from "react-native";
-import { EmptyListContainer, Image, SubTitle, Title } from "./styles";
-import shopping_list from "../../assets/shopping_list.png"
+import { Text, 
+    View } from "react-native";
 
+import { EmptyListContainer, 
+    Image, 
+    SubTitle, 
+    Title } from "./styles";
+
+import shopping_list from "../../assets/shopping_list.png"
 
 
 export function EmptyList(){
