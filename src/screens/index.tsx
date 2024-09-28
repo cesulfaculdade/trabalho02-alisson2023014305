@@ -1,18 +1,35 @@
-import { Text, View } from "react-native";
-import { Container } from "./styles";
+import { Text, TextInput, View } from "react-native";
+import { Button, Container, ContainerInput, ContainerTop, IconButton, Input } from "./styles";
 
-
+import { Header } from "@components/header";
 
 
 export function Home(){
     return(
 
-        <Container>
+    <Container>
+
+        <ContainerTop>
+      
+            <Header/>
             
-            <Text>TESTE</Text>
+        </ContainerTop>
 
-        </Container>
+        <ContainerInput>
 
+            <Input
+            placeholder="Adicione um novo produto"
+            placeholderTextColor="#BDBABA"
+            keyboardType="default"
+            />
+            <Button>
+              <IconButton name="add-circle-outline" />
+            </Button>
+            
+            
 
+        </ContainerInput>
+
+    </Container>
     )
 }
